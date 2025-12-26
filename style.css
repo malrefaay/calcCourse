@@ -1,4 +1,8 @@
-/* Basic Reset and Layout */
+/* UI Branch - Step 3: Basic Styling */
+/* Added: Colors, fonts, improved layout */
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -11,53 +15,86 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #1a1a2e;
-    font-family: system-ui, -apple-system, sans-serif;
+    font-family: 'JetBrains Mono', monospace;
 }
 
 /* Calculator Container */
 .calculator {
-    background: #2d2d44;
-    padding: 20px;
-    border-radius: 10px;
+    background: #16213e;
+    padding: 24px;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
 }
 
 /* Display Area */
 .display {
-    background: #1a1a2e;
-    padding: 15px;
-    margin-bottom: 15px;
-    border-radius: 5px;
+    background: #0f0f23;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
     text-align: right;
-    min-height: 70px;
+    min-height: 90px;
 }
 
 .display-previous {
-    font-size: 0.9rem;
-    color: #888;
-    min-height: 20px;
+    font-size: 1rem;
+    color: #6b7280;
+    min-height: 24px;
+    margin-bottom: 5px;
 }
 
 .display-current {
-    font-size: 2rem;
-    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #e8e8e8;
 }
 
 /* Button Grid */
 .buttons {
     display: grid;
-    grid-template-columns: repeat(4, 60px);
-    gap: 8px;
+    grid-template-columns: repeat(4, 70px);
+    gap: 12px;
 }
 
 /* Base Button */
 .btn {
-    height: 60px;
+    height: 70px;
     border: none;
-    border-radius: 8px;
-    font-size: 1.25rem;
+    border-radius: 14px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.4rem;
+    font-weight: 600;
     cursor: pointer;
-    background: #404060;
-    color: #fff;
+}
+
+/* Number Buttons */
+.btn-number {
+    background: #1e3a5f;
+    color: #ffffff;
+}
+
+/* Operator Buttons */
+.btn-operator {
+    background: #f7931a;
+    color: #ffffff;
+}
+
+/* Action Buttons (backspace, percent) */
+.btn-action {
+    background: #4a5568;
+    color: #e2e8f0;
+}
+
+/* Clear Button */
+.btn-clear {
+    background: #e74c3c;
+    color: #ffffff;
+}
+
+/* Equals Button */
+.btn-equals {
+    background: #00d26a;
+    color: #ffffff;
 }
 
 /* Wide Button (Zero) */
