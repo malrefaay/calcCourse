@@ -1,5 +1,4 @@
-/* Calculator Styles - To be developed */
-
+/* Basic Reset and Layout */
 * {
     margin: 0;
     padding: 0;
@@ -12,8 +11,57 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #1a1a2e;
+    font-family: system-ui, -apple-system, sans-serif;
 }
 
+/* Calculator Container */
 .calculator {
-    /* Styles will be added */
+    background: #2d2d44;
+    padding: 20px;
+    border-radius: 10px;
 }
+
+/* Display Area */
+.display {
+    background: #1a1a2e;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    text-align: right;
+    min-height: 70px;
+}
+
+.display-previous {
+    font-size: 0.9rem;
+    color: #888;
+    min-height: 20px;
+}
+
+.display-current {
+    font-size: 2rem;
+    color: #fff;
+}
+
+/* Button Grid */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 60px);
+    gap: 8px;
+}
+
+/* Base Button */
+.btn {
+    height: 60px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.25rem;
+    cursor: pointer;
+    background: #404060;
+    color: #fff;
+}
+
+/* Wide Button (Zero) */
+.btn-wide {
+    grid-column: span 2;
+}
+
